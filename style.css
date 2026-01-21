@@ -1,0 +1,146 @@
+/* RESET SIMPLE */
+* {
+    margin: 0;               /* supprime les marges par défaut */
+    padding: 0;              /* supprime les paddings par défaut */
+    box-sizing: border-box;  /* inclut padding et border dans la taille des éléments */
+}
+
+/* BODY - FOND ET TEXTE */
+body {
+    font-family: Arial, Helvetica, sans-serif;    /* police lisible pour tout le site */
+    background: linear-gradient(135deg, #1e3c72, #2a5298);  /* dégradé bleu */
+    min-height: 100vh;       /* fait en sorte que le fond couvre tout l’écran */
+    color: #ffffff;          /* texte blanc pour bien contraster sur fond bleu */
+    line-height: 1.6;        /* espace entre les lignes pour faciliter la lecture */
+    padding: 20px;           /* espace intérieur autour du contenu */
+}
+
+/* CONTENEUR PRINCIPAL */
+.container {
+    max-width: 1000px;                       /* largeur maximale pour que ce soit centré et lisible */
+    margin: auto;                             /* centre le conteneur horizontalement */
+    padding: 15px;                            /* espace intérieur */
+    background-color: rgba(255,255,255,0.05);/* fond semi-transparent pour mieux voir le texte sur le dégradé */
+    border-radius: 12px;                      /* coins arrondis */
+}
+
+/* TITRES */
+h1, h2, h3 {
+    margin-bottom: 12px;  /* espace en dessous des titres */
+    color: #ffffff;        /* titres en blanc */
+}
+
+h1 {
+    text-align: center;    /* titre centré */
+    font-size: 28px;       /* taille plus grande pour le titre principal */
+}
+
+h2 {
+    font-size: 22px;       /* taille moyenne pour sous-titres */
+}
+
+h3 {
+    font-size: 18px;       /* taille plus petite pour titres secondaires */
+}
+
+/* PARAGRAPHES */
+p {
+    color: #f0f0f0;        /* texte blanc cassé pour être lisible mais pas trop dur */
+    margin-bottom: 15px;   /* espace sous chaque paragraphe */
+}
+
+/* BOUTONS */
+.btn {
+    background: linear-gradient(135deg, #1fb6ff, #7c3aed); /* dégradé bleu-violet */
+    color: #ffffff;         /* texte blanc sur bouton */
+    padding: 12px 20px;     /* espace intérieur du bouton */
+    border: none;           /* pas de bordure */
+    border-radius: 8px;     /* coins arrondis */
+    cursor: pointer;        /* montre que c’est cliquable */
+    transition: transform 0.2s ease, background 0.3s ease; /* effet lisse au survol */
+}
+
+.btn:hover {
+    transform: scale(1.05); /* légère augmentation de taille au survol */
+    background: linear-gradient(135deg, #7c3aed, #1fb6ff); /* inversion du dégradé au survol */
+}
+
+/* ALBUM PHOTO */
+.album {
+    display: grid;                                 /* utilise une grille pour aligner les images */
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* colonnes adaptatives selon la largeur */
+    gap: 12px;                                     /* espace entre les images */
+    margin-top: 15px;                              /* espace au dessus de l’album */
+}
+
+.album img {
+    width: 100%;           /* image prend toute la largeur de la colonne */
+    height: 140px;         /* hauteur fixe pour uniformité */
+    object-fit: cover;     /* l’image remplit le cadre sans être déformée */
+    border-radius: 8px;    /* coins arrondis */
+    transition: transform 0.3s ease; /* effet de zoom doux au survol */
+}
+
+.album img:hover {
+    transform: scale(1.05); /* zoom léger au survol */
+}
+
+.project-info{
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.projet-info h2{
+  text-align: center;   /*titre centré*/
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.projet-info h3{
+  font-size: 18px;
+  margin-top: 12px;
+  margin-bottom: 6px;
+}
+
+.projet-info p{
+  color: #f0f0f0;   /*texte blanc cassé*/
+  margin-bottom: 10px;
+}
+
+/*Centrer les images*/
+.center-image{
+  text-align: center;   /*centrer horizontalement l'image*/
+  margin: 15px 0;   /*espacer au dessus et en dessous*/
+}
+
+
+/* LIENS */
+a {
+    color: #1fb6ff;        /* couleur bleu vif pour les liens */
+    text-decoration: none;  /* supprime le soulignement par défaut */
+}
+
+a:hover {
+    text-decoration: underline; /* souligne le lien au survol */
+}
+
+/* RESPONSIVE - pour petits écrans */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;      /* moins de padding sur petit écran */
+    }
+
+    h1 {
+        font-size: 24px;    /* titre principal un peu plus petit */
+    }
+
+    h2 {
+        font-size: 20px;    /* sous-titre plus petit */
+    }
+
+    .album img {
+        height: 120px;      /* images un peu plus petites pour les écrans étroits */
+    }
+}
