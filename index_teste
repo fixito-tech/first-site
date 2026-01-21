@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">    <!--lenguage du code HTML en francais-->
+<head>    <!--n'affiche pas de contenu, donne juste des infos au navigateur-->
+  <meta charset="UTF-8">    <!--langage des lettres et symboles-->
+  <title>Transformateur de puissance électrique</title>    <!--titre de la page HTML-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">    <!--recponcive du site-->
+  <link rel="stylesheet" href="style.css">    <!--importe le CSS dans le HTML-->
+</head>
+
+    <body>
+
+  <!-- ========================= -->
+  <!-- CONTENEUR PRINCIPAL -->
+  <!-- ========================= -->
+  <div class="container">
+
+    <!-- Titre principal du projet -->
+    <h1>Transformateur de puissance électrique</h1>
+        <p class="intro">
+            Ce site présente le plus simplement possibles notre projet, même si vous n'avez aucune connaissance technique.
+        </p>
+
+    <!-- ========================= -->
+    <!-- PRÉSENTATION DU PROJET -->
+    <!-- ========================= -->
+    <h2>Présentation du projet -- Variateur de puissance</h2>
+    <p>
+      Je vais vous présenter notre mini-projet : un variateur électronique de puissance.
+    </p>
+
+    <!-- ========================= -->
+    <!-- OBJECTIFS DU PROJET -->
+    <!-- ========================= -->
+    <h2>Objectifs du projet</h2>
+    <p>
+      Faire varier la luminosité d’ampoules en contrôlant la tension et la puissance.</br>
+      Comprendre le fonctionnement d’un système électronique de puissance.
+    </p>
+
+    <!-- ========================= -->
+    <!-- TRAVAIL EN BINÔME -->
+    <!-- ========================= -->
+    <h2>Travail commun</h2>
+    <p>
+      Ce projet a été réalisé à deux. Le travail a été réparti entre la partie
+      recherche, réalisation, conception, réalisation, programation et rédaction.</br>
+      Je me suis personnellement occupé de la schématisation et de la conception de la partie électrique. J’ai également conçu tout le système de refroidissement afin d’éviter les surchauffes.
+    </p>
+
+    <!-- ========================= -->
+    <!-- Matériel utilisé -->
+    <!-- ========================= -->
+    <h2>Matériel utilisé</h2>
+    <p>
+        - Ampoules 24 V 250 W</br>
+        - Batterie 48 V 40 A</br>
+        - Carte Arduino avec bouton pour changer les modes</br>
+        - MOSFETs pour contrôler précisément l’intensité</br>
+        - Ventilateurs pour refroidir les composants</br>
+    </p>
+
+    <!-- ========================= -->
+    <!-- Etapes de réalisation -->
+    <!-- ========================= -->
+    <h2>Etapes de réalisation</h2>
+    <p>
+    1. Schématisation du circuit pour éviter les erreurs lors des soudures.</br>
+    2. Placement des composants sur la planche de test pour optimiser l’organisation.</br>
+    3. Soudure et vérification des connexions avec un voltmètre.</br>
+    4. Adaptation du montage lors de problèmes rencontrés (ex : bouton qui fondait).</br>
+    5. Tests pour vérifier que les calculs et les réglages étaient corrects.</br>
+    </p>
+
+    <!-- ========================= -->
+    <!-- Fonctionnement du variateur -->
+    <!-- ========================= -->
+    <h2>Fonctionnement du variateur</h2>
+    <p>
+        - il y a 5 modes sur notre variateur : 0 %, 25 %, 50 %, 75 %, 100 % de puissance </br>
+        - Il n'y a qu'un boutton pour changer de mode.</br>
+        - La LED sur la carte Arduino sert a nous indiquer le mode choisi.</br>
+    </p>
+
+  <!-- ========================= -->
+  <!-- ALBUM PHOTO DU PROJET  AJOUT -->
+  <!--  AJOUT : Section album photo pour montrer les étapes du projet -->
+  <section class="card">
+    <h2>Album photo du projet</h2>
+    <p>
+      Voici quelques images montrant les différentes étapes de notre projet,
+      pour que tout le monde comprenne facilement. Pour en s'avoir plus sur chaque partie cliquer sur les images.
+    </p>
+
+    <!-- Grille des images -->
+    <div class="album">
+        <a href="montage.html"><img src="image/Album/image2.jpg" alt="Montage du projet"></a> <!-- lien vers page détail -->
+        <a href="schema.html"><img src="image/Album/image7.jpg" alt="Schéma électrique"></a>
+        <a href="resultat.html"><img src="image/Album/image1.jpg" alt="Résultat final"></a>
+    </div>
+
+  </section>
+
+  <h2>
+    Lien vers le <a href="https://docs.google.com/document/d/13OU_sKBd-XmGq8OncZ9YVYQlPe9u1b2eUjtLFREvDPs/edit?usp=sharing" target="_blank">compte-rendu finale</a>
+  </h2>
+
+  </div>
+
+</body>
+
+</html>
+
+<!--  https://docs.google.com/document/d/13OU_sKBd-XmGq8OncZ9YVYQlPe9u1b2eUjtLFREvDPs/edit?usp=sharing  --> <!--  lien compte-rendu google docs  -->
