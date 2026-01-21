@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Montage du projet</title>
+  <link rel="stylesheet" href="style.css"> <!--  AJOUT : même style que le site principal -->
+</head>
+<body>
+  <div class="container">
+    <h1>Montage et placement des éléments du projet</h1>
+    <p>
+      Ici, on explique plus en détail comment j'ai réalisé le montage électrique 
+      du transformateur de puissance, ainsi que le placement des éléments.
+    </p>
+
+    <div class="center-image">
+    <img src="image/Album/image2.jpg" alt="Montage du projet" style="width:100%; max-width:600px; margin-top:20px;">
+    </div>
+
+    <p>
+      Explication détaillée étape par étape :
+      <p>
+        1. J'ai tout d'abord commencé par faire la schématisation du circuit électrique afin de ne pas me tromper lors des soudures. (plus d'info sur le circuit électrique dans le repertoire schématisation)
+        Une fois la schématisation finie, je me suis occupé de tout positionner afin de visualiser et de faire le placement le plus optimal possible des différents éléments.
+      </p>
+      <p>
+        2. Ensuite, je n'avais plus qu'à faire toutes les soudures, mais tout ne s'est pas passé comme prévu car j'ai rencontré des problèmes avec le bouton, qui fondait à chaque fois que je soudais un câble dessus.
+      </p>
+      <p>
+        3.Pour finir, j'ai vérifié avec le voltmètre en mode testeur de continuité que toutes les connexions soudées étaient correctement reliées.
+      </p>
+    </p>
+    
+
+    <a href="index_teste.html" class="btn" style="margin-top:20px;">Retour au site principal</a>
+  </div>
+</body>
+</html>
